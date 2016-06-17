@@ -51,7 +51,7 @@ func invert(region: Region) -> Region {
 }
 
 
-// To find the intersection between two points
+//Points that must appear in both points
 func intersection(firstRegion: Region, secondRegion: Region) -> Region {
     return { point in firstRegion(point) && secondRegion(point) }
 }
