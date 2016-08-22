@@ -43,13 +43,12 @@ func shift(offset: Position, region: Region) -> Region {
 }
 
 
-// returns a region function that is no in the given region
+// returns a region function that is not in the given region
 func invert(region: Region) -> Region {
     return {
         point in !region(point)
     }
 }
-
 
 //Points that must appear in both points
 func intersection(firstRegion: Region, secondRegion: Region) -> Region {
@@ -78,3 +77,9 @@ func inRangeOne(enemyPostion: Position, ownPosition: Position, friendlyDistance:
     let resultRegion = difference(targetRegion, minusRegion: friendlyRegion)
     return resultRegion(enemyPostion)
     }
+
+func addthreeNumbers(n: Int) -> Int -> Int -> Int {
+    return { p in return }
+}
+
+addthreeNumbers(78)(89)(89)
